@@ -1,0 +1,72 @@
+:root {
+  --hue: 194;
+  --saturation: 100%;
+  --brightness: 65%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.box {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+
+h3 {
+  margin: 0.5em 0;
+  width: 50%;
+  text-align: left;
+}
+
+form {
+  border: 1px solid hsl(var(--hue), var(--saturation), var(--brightness));
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+input,
+button {
+  border-radius: 1em;
+  border: 1px solid #000;
+  outline: none;
+  padding: 0.3em;
+}
+
+input:active,
+input:hover {
+  outline: none;
+}
+
+input {
+  text-indent: 1em;
+}
+
+.col {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  --saturation: 100%;
+  border: 1px solid hsl(var(--hue), var(--saturation), var(--brightness));
+  background-color: hsl(var(--hue), var(--saturation), var(--brightness));
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+button:hover {
+  background-color: #fff;
+}
