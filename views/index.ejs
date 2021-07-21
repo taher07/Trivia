@@ -1,22 +1,22 @@
 <%- include("partials/header") -%>
 
   <body>
-    <div class="container">
-      <div class="box">
-        <h3>Login</h3>
-        <form action="/login" method="POST">
-          <div class="col">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+    <div class="container-fluid">
+      <div class="row col w-100">
+        <h3 class="title-text col-sm-12 col-md-4 offset-md-4">Login</h3>
+        <form action="/login" method="POST" class="col-sm-12 col-md-4 offset-md-4">
+          <div class="col-sm-12">
+            <label for="email" class="form-control-label">Email</label>
+            <input type="email" name="email" id="email" class="form-control" />
           </div>
 
-          <div class="col">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+          <div class="col-sm-12 mt-2">
+            <label for="password" class="form-control-label">Password</label>
+            <input type="password" name="password" id="password" class="form-control" />
           </div>
 
-          <button type="submit">
-            Let's start!
+          <button class="btn btn-block col-sm-12 text-white mt-2" type="submit">
+            Let's start
           </button>
         </form>
       </div>

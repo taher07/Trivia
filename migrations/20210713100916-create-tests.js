@@ -20,6 +20,9 @@ module.exports = {
       total: {
         type: Sequelize.INTEGER
       },
+      questions_count: {
+        type: Sequelize.INTEGER
+      },
       pass_points: {
         type: Sequelize.INTEGER
       },

@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     group_id: DataTypes.INTEGER,
     date_of_test: DataTypes.DATE,
     total: DataTypes.INTEGER,
+    questions_count: DataTypes.INTEGER,
     pass_points: DataTypes.INTEGER
   }, {
     sequelize,

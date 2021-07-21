@@ -1,4 +1,6 @@
 const winston = require("winston")
+const redis = require("redis")
+const { REDIS_PORT } = require("../config")
 
 exports.infoLogger = winston.createLogger({
   level: "info",
@@ -19,3 +21,7 @@ exports.errorLogger = winston.createLogger({
   ),
   transports: [new winston.transports.Console()]
 })
+
+exports.redisClient = redis.createClient(REDIS_PORT)
+
+this.redisClient.on("error", err => this.errorLogger.error(err))

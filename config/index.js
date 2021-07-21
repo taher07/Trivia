@@ -14,5 +14,6 @@ module.exports = {
   PROD_DB: process.env.PROD_DB || "",
   PROD_USERNAME: process.env.PROD_USERNAME || "root",
   PROD_PASSWORD: process.env.PROD_PASSWORD || "",
-  SECRET_KEY: process.env.SECRET || "secret"
+  SECRET_KEY: process.env.SECRET || "secret",
+  REDIS_PORT: process.env.REDIS_PORT || 6379
 }
